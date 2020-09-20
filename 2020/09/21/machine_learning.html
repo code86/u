@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>weekly exercise | fp</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="weekly exercise" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="tensorflow/keras; sklearn;" />
+<meta property="og:description" content="tensorflow/keras; sklearn;" />
+<link rel="canonical" href="https://ocr.pw/u/2020/09/21/machine_learning.html" />
+<meta property="og:url" content="https://ocr.pw/u/2020/09/21/machine_learning.html" />
+<meta property="og:site_name" content="fp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-21T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://ocr.pw/u/2020/09/21/machine_learning.html","@type":"BlogPosting","headline":"weekly exercise","dateModified":"2020-09-21T00:00:00-05:00","datePublished":"2020-09-21T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ocr.pw/u/2020/09/21/machine_learning.html"},"description":"tensorflow/keras; sklearn;","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/u/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ocr.pw/u/feed.xml" title="fp" /><link rel="shortcut icon" type="image/x-icon" href="/u/images/favicon.ico"><link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/u/">fp</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/u/about/">About Me</a><a class="page-link" href="/u/search/">Search</a><a class="page-link" href="/u/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">weekly exercise</h1><p class="page-description">tensorflow/keras; sklearn; </p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-09-21T00:00:00-05:00" itemprop="datePublished">
+        Sep 21, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-09-21-machine_learning.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Linear-Regression">Linear Regression<a class="anchor-link" href="#Linear-Regression"> </a></h1><p>Let us first review linear regression.</p>
+<p>Your exercise is to repeat the following analysis using a neural network.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_stata</span><span class="p">(</span><span class="s1">&#39;http://www.stata-press.com/data/r11/auto.dta&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">linear_model</span> <span class="k">as</span> <span class="n">lm</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[[</span><span class="s1">&#39;weight&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[[</span><span class="s1">&#39;mpg&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="p">[</span><span class="n">lm</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">lm</span><span class="o">.</span><span class="n">coef_</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[array([39.44028353]), array([[-0.00600869]])]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The above result (negative slope, of -0.0060) confirms our intuition that fuel efficiency (in terms of miles per gallon, mpg) is lower for heavier vehicles.</p>
+<p>Now, let's check out the scatter plot of mpg versus weight, as well as the fitted/predicted regression line.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;weight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;mpg&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Your-Task">Your Task<a class="anchor-link" href="#Your-Task"> </a></h1><p>Replicate the above <a href="https://developers.google.com/machine-learning/crash-course/descending-into-ml/linear-regression">linear regression</a>, $mpg = w_0 + w_1 \cdot weight$, using a simple <a href="https://youtu.be/aircAruvnKk">neural network</a>.</p>
+<p>$w_0$ and $w_0$ are generally known as the <em>bias</em> and <em>weight</em> respectively.</p>
+<p>Your Exercise:</p>
+<ol>
+<li>Replicate the above linear regression using an <a href="https://machinelearningknowledge.ai/wp-content/uploads/2019/06/Artificial-Neuron-Working.gif">artificial neuron</a> with Tensorflow.Keras. <a href="https://www.tensorflow.org/tutorials/keras/regression">This example</a> may be helpful to get you started. <em>To get the same intercept and cofficient as in linear regression</em>: No hidden layer. No activation function. No data normalization. Use entire dataset for training (i.e., no need to separate the dataset into training / validation / testing). In your trained/fitted model, the final weight and bias should be equal to the above (i.e., weight of -0.0060, and bias of 39.44). Check if it is so.</li>
+</ol>
+<ol>
+<li>Repeat with <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html">sklearn.MLPRegressor</a>. As before, no hidden layer / activation function. Use "linear / identity" for the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html">activation function</a> if it must be specified. "linear / identity" means that $f(x) = x$.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="code86/u"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/u/2020/09/21/machine_learning.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/u/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/u/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/u/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>my Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
